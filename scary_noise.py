@@ -21,7 +21,6 @@ def main():
     while time.time() < end_time:
         # Generate a random delay between 5 to 10 minutes (300 to 600 seconds)
         delay = random.randint(5, 10) * 60
-        print(f"Waiting for {delay} seconds...")
         time.sleep(delay)
         play_random_sound()
 

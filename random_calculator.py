@@ -9,8 +9,6 @@ while time.time() < end_time:
     # Randomly decide whether to open the calculator (e.g., 10% chance each second)
     if random.random() < 0.1:
         # Open the calculator application
-        # subprocess.Popen('calc.exe')  # For Windows
-        # subprocess.Popen(['gnome-calculator'])  # For Linux with GNOME
         subprocess.Popen(['open', '-na', 'Calculator'])  # For macOS
 
     # Wait for 1 second before checking again
